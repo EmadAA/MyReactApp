@@ -1,20 +1,20 @@
 
 import './App.css';
-import Copy from './Components/Copy';
+//Importing Module CSS file
 
-import Contact from './Components/Contact';
+
 
 function App() { 
+  let formChange =(e)=>{
+console.log(e.target.value);
+  }
   
 
   return (
     <>
   <div>
-  <Contact name="Emad Uddin Adil" number= "015871441" />
-  <Contact name="Emad  Adil" number= "01587654961441" />
-  <Contact name="Emad " number= "0158765491" />
-  <Contact name="Adil" number= "01587654961441" />
-  <Copy/>
+   <h1 className='text-center bg-success'>Learning React-Bootstrap </h1>
+   <input type="text"placeholder='Type Here' className='form-control' onChange={formChange}/>
   </div>
     </>
   )

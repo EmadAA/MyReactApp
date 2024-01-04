@@ -1,4 +1,9 @@
 /* eslint-disable no-unused-vars */
+
+
+// Understanding Cut Copy Paste in React JS
+
+
 import React from 'react';
 
 function Copy() {
@@ -15,7 +20,15 @@ alert("Text Copied !");
  const pasteText = ()=>{
          alert("Text Pasted Succesfully !"); 
          }
-        
+       
+    const FocusText = ()=>{
+        console.log("Text Fucus !"); 
+            }
+  
+            const BlurText = ()=>{
+                console.log("Text Blur !"); 
+                    }
+          
   return (
     <>
 
@@ -24,6 +37,11 @@ alert("Text Copied !");
 <p onCut={cutText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deleniti assumenda est, architecto unde </p>
 
 <input type="text" onPaste={pasteText} />
+
+<input type="text" onFocus={FocusText} />
+<input type="text" onBlur={BlurText} />
+
+
 
 
     </>

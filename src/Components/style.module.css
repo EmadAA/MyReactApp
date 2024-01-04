@@ -1,0 +1,16 @@
+.test {
+  background-color: black;
+  font-size: larger;
+  color: aliceblue;
+  text-align: center;
+}
+.test2 {
+  background-color: black;
+  font-size: larger;
+  color: aliceblue;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
