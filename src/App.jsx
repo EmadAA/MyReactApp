@@ -1,23 +1,20 @@
 
 import './App.css';
+import Carousel from './Blog Website/Carousel';
 //Importing Module CSS file
 
 
 
 function App() { 
-  let formChange =(e)=>{
-console.log(e.target.value);
-  }
+ 
   
 
   return (
-    <>
-  <div>
-   <h1 className='text-center bg-success'>Learning React-Bootstrap </h1>
-   <input type="text"placeholder='Type Here' className='form-control' onChange={formChange}/>
-  </div>
-    </>
+  <>
+  <Carousel/>
+
+  </>
   )
 }
 
-export default App
+export default App ;
